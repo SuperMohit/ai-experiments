@@ -1,0 +1,11 @@
+<div class="profile-container">
+  <div class="profile-header">
+    <h2>{{ username }}</h2>
+    <p>@{{ handle }}</p>
+    <button>Edit Profile</button>
+  </div>
+  <div class="profile-tweets">
+    <h3>Your Tweets</h3>
+    <app-tweet *ngFor="let tweet of userTweets" [tweet]="tweet"></app-tweet>
+  </div>
+</div>
