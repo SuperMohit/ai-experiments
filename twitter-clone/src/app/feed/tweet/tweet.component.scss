@@ -1,0 +1,26 @@
+$tweet-bg-color: #f5f8fa;
+
+.tweet-container {
+  background-color: $tweet-bg-color;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  .tweet-header {
+    display: flex;
+    justify-content: space-between;
+    .username {
+      font-weight: bold;
+    }
+    .timestamp {
+      color: #657786;
+      font-size: 0.9rem;
+    }
+  }
+  .tweet-body {
+    margin-top: 5px;
+    p {
+      margin: 0;
+    }
+  }
+}
