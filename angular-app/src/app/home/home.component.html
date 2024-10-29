@@ -1,0 +1,10 @@
+<div class="home-listing">
+  <div *ngFor="let home of homeListings" class="home-card">
+    <img [src]="home.imageUrl" alt="{{ home.title }}">
+    <div class="home-details">
+      <h3>{{ home.title }}</h3>
+      <p>{{ home.description }}</p>
+      <p class="price">${{ home.price | number }}</p>
+    </div>
+  </div>
+</div>
