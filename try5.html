@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Central</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --primary: 220, 90%, 56%;
+        --primary-foreground: 0, 0%, 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- Navbar -->
+    <header class="bg-white shadow sticky top-0 z-10">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-[hsl(var(--primary))]">Cricket Central</div>
+        <nav class="space-x-6">
+          <a href="#live" class="hover:text-[hsl(var(--primary))] transition-colors">Live Score</a>
+          <a href="#schedule" class="hover:text-[hsl(var(--primary))] transition-colors">Schedule</a>
+          <a href="#rankings" class="hover:text-[hsl(var(--primary))] transition-colors">Rankings</a>
+          <a href="#news" class="hover:text-[hsl(var(--primary))] transition-colors">News</a>
+          <a href="#about" class="hover:text-[hsl(var(--primary))] transition-colors">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-[url('https://via.placeholder.com/1500x500?text=Cricket+Field')] bg-cover bg-center py-24">
+      <div class="container mx-auto text-center bg-black/50 p-8 rounded-lg">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Cricket Central</h1>
+        <p class="text-lg md:text-2xl text-gray-200 mb-8">
+          Your one-stop destination for live cricket scores, schedules, rankings, and news.
+        </p>
+        <a href="#live" class="px-8 py-3 bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] rounded-full shadow hover:shadow-lg transition duration-300">
+          Watch Live
+        </a>
+      </div>
+    </section>
+
+    <!-- Live Scores Section -->
+    <section id="live" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Live Scores</h2>
+        <!-- Example Score Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex justify-between items-center mb-4">
+              <div class="text-xl font-semibold">Team A vs Team B</div>
+              <div class="text-sm text-gray-500">Today, 3:00 PM</div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-y-2">
+                <div class="font-medium">Team A</div>
+                <div class="text-gray-600">250/7 (45 overs)</div>
+              </div>
+              <div class="text-lg font-bold"> vs </div>
+              <div class="space-y-2 text-right">
+                <div class="font-medium">Team B</div>
+                <div class="text-gray-600">230/8 (45 overs)</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex justify-between items-center mb-4">
+              <div class="text-xl font-semibold">Team C vs Team D</div>
+              <div class="text-sm text-gray-500">Today, 5:30 PM</div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-y-2">
+                <div class="font-medium">Team C</div>
+                <div class="text-gray-600">180/5 (40 overs)</div>
+              </div>
+              <div class="text-lg font-bold"> vs </div>
+              <div class="space-y-2 text-right">
+                <div class="font-medium">Team D</div>
+                <div class="text-gray-600">175/6 (40 overs)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Match Schedule Section -->
+    <section id="schedule" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Upcoming Matches</h2>
+        <!-- Example Schedule List -->
+        <ul class="space-y-4 max-w-2xl mx-auto">
+          <li class="bg-white rounded-lg shadow p-4 flex justify-between items-center">
+            <div>
+              <div class="font-medium">Team E vs Team F</div>
+              <div class="text-sm text-gray-500">Tomorrow, 2:00 PM</div>
+            </div>
+            <button class="px-4 py-2 bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] rounded-full hover:shadow transition">
+              Details
+            </button>
+          </li>
+          <li class="bg-white rounded-lg shadow p-4 flex justify-between items-center">
+            <div>
+              <div class="font-medium">Team G vs Team H</div>
+              <div class="text-sm text-gray-500">Tomorrow, 5:00 PM</div>
+            </div>
+            <button class="px-4 py-2 bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] rounded-full hover:shadow transition">
+              Details
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Team Rankings Section -->
+    <section id="rankings" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Team Rankings</h2>
+        <!-- Example Rankings Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full bg-white rounded-lg shadow">
+            <thead>
+              <tr class="bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))]">
+                <th class="py-3 px-4 text-left">Rank</th>
+                <th class="py-3 px-4 text-left">Team</th>
+                <th class="py-3 px-4 text-left">Points</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-700">
+              <tr class="border-t">
+                <td class="py-3 px-4">1</td>
+                <td class="py-3 px-4">Team A</td>
+                <td class="py-3 px-4">1450</td>
+              </tr>
+              <tr class="border-t">
+                <td class="py-3 px-4">2</td>
+                <td class="py-3 px-4">Team B</td>
+                <td class="py-3 px-4">1380</td>
+              </tr>
+              <tr class="border-t">
+                <td class="py-3 px-4">3</td>
+                <td class="py-3 px-4">Team C</td>
+                <td class="py-3 px-4">1325</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cricket News Section -->
+    <section id="news" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Cricket News</h2>
+        <!-- Example News Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow overflow-hidden">
+            <img src="https://via.placeholder.com/600x300?text=News+1" alt="News 1" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Record-Breaking Performance</h3>
+              <p class="text-gray-600 text-sm">
+                Team A's star batsman shatters records with a phenomenal century.
+              </p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow overflow-hidden">
+            <img src="https://via.placeholder.com/600x300?text=News+2" alt="News 2" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Upcoming Tournament Hype</h3>
+              <p class="text-gray-600 text-sm">
+                Preparations are underway as the biggest tournament of the season draws near.
+              </p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow overflow-hidden">
+            <img src="https://via.placeholder.com/600x300?text=News+3" alt="News 3" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Injury Update</h3>
+              <p class="text-gray-600 text-sm">
+                Latest updates on key players and their fitness ahead of the crucial matches.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">About Cricket Central</h2>
+        <p class="max-w-2xl mx-auto text-gray-700">
+          Cricket Central is dedicated to bringing you the latest updates, live scores, match schedules, team rankings, and insightful news from the world of cricket. Whether you're a die-hard fan or a casual viewer, we have everything you need to stay connected with the game.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow py-6">
+      <div class="container mx-auto px-4 text-center text-gray-600 text-sm">
+        &copy; 2025 Cricket Central. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

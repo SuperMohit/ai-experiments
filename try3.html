@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Futuristic Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --background: #0a0a0a;
+        --foreground: #eaeaea;
+        --primary: #00d4ff;
+        --secondary: #008cff;
+        --accent: #ff007f;
+      }
+    </style>
+  </head>
+  <body class="bg-[var(--background)] text-[var(--foreground)] font-sans">
+    <header class="py-6 border-b border-gray-700">
+      <div class="container mx-auto flex justify-between items-center px-6">
+        <div class="text-2xl font-bold text-[var(--primary)]">Neon UI</div>
+        <nav class="space-x-6">
+          <a href="#" class="hover:text-[var(--secondary)] transition">Home</a>
+          <a href="#" class="hover:text-[var(--secondary)] transition">Gallery</a>
+          <a href="#" class="hover:text-[var(--secondary)] transition">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="text-center py-16">
+      <h1 class="text-5xl font-bold mb-4 text-[var(--primary)]">
+        The Future is Now
+      </h1>
+      <p class="text-lg max-w-lg mx-auto">
+        Experience the power of neon-infused UI design with sleek, elegant, and
+        modern aesthetics.
+      </p>
+      <button class="mt-6 px-8 py-3 bg-[var(--secondary)] text-white rounded-full hover:bg-[var(--accent)] transition">
+        Explore Now
+      </button>
+    </main>
+
+    <section class="py-16 bg-gray-900">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-[var(--primary)] mb-6">
+          Trending UI Designs
+        </h2>
+        <img src="https://via.placeholder.com/600x300" alt="Neon UI" class="mx-auto rounded-lg shadow-lg">
+      </div>
+    </section>
+
+    <footer class="py-6 text-center border-t border-gray-700">
+      &copy; 2025 Neon UI. All rights reserved.
+    </footer>
+  </body>
+</html>
